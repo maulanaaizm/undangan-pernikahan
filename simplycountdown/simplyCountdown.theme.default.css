@@ -1,0 +1,65 @@
+/* .simply-countdown {
+  overflow: hidden;
+  display: flex;
+  width: 550px;
+  justify-content: space-evenly;
+  font-family: "Baloo Bhai 2", sans-serif;
+}
+.simply-countdown > .simply-section {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 15px;
+  color: #f472b8;
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 3.5rem;
+  margin-bottom: -15px;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  margin-bottom: 10px;
+} */
+
+.simply-countdown {
+  overflow: hidden;
+  display: flex;
+  /* max-width: 850px; */
+  justify-content: space-around;
+  font-family: "Baloo Bhai 2", sans-serif;
+}
+.simply-countdown > .simply-section {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 15px;
+  color: #f472b8;
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 3.5rem;
+  margin-bottom: -15px;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  margin-bottom: 10px;
+}

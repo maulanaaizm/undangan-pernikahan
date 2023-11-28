@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.progress-bar {
+  @apply z-[9999];
+  animation-timeline: scroll();
+}
+.loading span {
+  animation: fadeUp 1s infinite ease-in-out alternate;
+}
+.loading .love1 {
+  animation-delay: -0.25s;
+}
+.loading .love2 {
+  animation-delay: -0.5s;
+}
+.loading .love3 {
+  animation-delay: -0.75s;
+}
+.loading .love4 {
+  animation-delay: -1s;
+}
+.loading .love5 {
+  animation-delay: -1.5s;
+}
+
+.simply-countdown {
+  @apply w-full md:w-[90%] lg:w-[75%] bg-white/10 backdrop-blur-sm shadow-md shadow-slate-900;
+}
+@keyframes fadeUp {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
