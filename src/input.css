@@ -26,7 +26,15 @@
 }
 
 .simply-countdown {
-  @apply w-full md:w-[90%] lg:w-[75%] bg-white/10 backdrop-blur-sm shadow-md shadow-slate-900;
+  @apply w-full md:w-[90%] lg:w-[85%] bg-white/10 backdrop-blur-sm shadow-md shadow-slate-900;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  @apply text-xl md:text-4xl lg:text-6xl;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  @apply text-base lg:text-xl;
 }
 @keyframes fadeUp {
   0% {

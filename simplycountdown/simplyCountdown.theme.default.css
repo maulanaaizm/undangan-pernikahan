@@ -39,8 +39,8 @@
   font-family: "Baloo Bhai 2", sans-serif;
 }
 .simply-countdown > .simply-section {
-  width: 90px;
-  height: 90px;
+  /* width: 90px;
+  height: 90px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,11 +55,11 @@
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.simply-countdown > .simply-section .simply-amount {
+/* .simply-countdown > .simply-section .simply-amount {
   font-size: 3.5rem;
   margin-bottom: -15px;
-}
+} */
 
-.simply-countdown > .simply-section .simply-word {
+/* .simply-countdown > .simply-section .simply-word {
   margin-bottom: 10px;
-}
+} */
