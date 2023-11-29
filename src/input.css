@@ -44,3 +44,7 @@
     transform: translateY(5px);
   }
 }
+
+.active {
+  @apply text-pink-700;
+}
