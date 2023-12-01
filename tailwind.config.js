@@ -12,7 +12,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        clifford: "#da373d",
+        primary: "#5f6f52",
+        sage: "#a9b388",
+        beige: "#fefae0",
+        brown: "#b99470",
       },
       screens: {
         "2xl": "1320px",

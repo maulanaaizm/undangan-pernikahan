@@ -16,12 +16,12 @@
 
     <link rel="stylesheet" href="dist/output.css" />
   </head>
-  <body>
+  <body class="bg-beige">
     <!-- progress bar -->
-    <div class="w-full h-[4px] bg-pink-600 animate-progress progress-bar fixed top-0 left-0 rounded-full"></div>
+    <div class="w-full h-[4px] bg-primary animate-progress progress-bar fixed top-0 left-0 rounded-full"></div>
 
     <!-- Loading menu -->
-    <div class="fixed h-[100vh] w-full z-[999] bg-white flex items-center justify-center overflow-hidden load-wrapper">
+    <!-- <div class="fixed h-[100vh] w-full z-[999] bg-white flex items-center justify-center overflow-hidden load-wrapper">
       <div class="loading h-[100vh] w-full flex items-center justify-center text-center z-50">
         <span class="love1"><i class="bi bi-heart-fill text-pink-600 text-xl lg:text-3xl p-[2px] lg:p-2"></i></span>
         <span class="love2"><i class="bi bi-heart-fill text-pink-600 text-xl lg:text-3xl p-[2px] lg:p-2"></i></span>
@@ -29,43 +29,43 @@
         <span class="love4"><i class="bi bi-heart-fill text-pink-600 text-xl lg:text-3xl p-[2px] lg:p-2"></i></span>
         <span class="love5"><i class="bi bi-heart-fill text-pink-600 text-xl lg:text-3xl p-[2px] lg:p-2"></i></span>
       </div>
-    </div>
+    </div> -->
 
     <!-- navbar -->
-    <nav class="navbar hidden w-full md:w-2/3 lg:w-1/2 bg-white/10 backdrop-blur-sm z-[999] shadow-xl fixed bottom-0 md:bottom-2 left-1/2 -translate-x-2/4 py-4 items-center rounded-t-xl md:rounded-xl">
+    <nav class="navbar hidden w-full md:w-2/3 lg:w-1/2 bg-sage backdrop-blur-sm z-[999] shadow-xl fixed bottom-0 md:bottom-2 left-1/2 -translate-x-2/4 py-4 items-center rounded-t-xl md:rounded-xl">
       <div class="container">
         <ul class="flex justify-around items-center">
           <li class="group">
-            <a href="#home" class="text-xl lg:text-3xl group-hover:text-pink-500 transition duration-300"> <i class="bi bi-house-door-fill"></i> </a>
+            <a href="#home" class="text-xl lg:text-3xl group-hover:text-primary text-beige transition duration-300"> <i class="bi bi-house-door-fill"></i> </a>
           </li>
           <li class="group">
-            <a href="#orang" class="text-xl lg:text-3xl group-hover:text-pink-500 transition duration-300">
+            <a href="#orang" class="text-xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-person-hearts"></i>
             </a>
           </li>
           <li class="group">
-            <a href="#tanggal" class="text-xl lg:text-3xl group-hover:text-pink-500 transition duration-300">
+            <a href="#tanggal" class="text-xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-calendar2-week-fill"></i>
             </a>
           </li>
           <li class="group">
-            <a href="#map" class="text-xl lg:text-3xl group-hover:text-pink-500 transition duration-300">
+            <a href="#map" class="text-xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-geo-alt-fill"></i>
             </a>
           </li>
 
           <li class="group">
-            <a href="#galeri" class="text-xl lg:text-3xl group-hover:text-pink-500 transition duration-300">
+            <a href="#galeri" class="text-xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-image-alt"></i>
             </a>
           </li>
           <li class="group">
-            <a href="#gift" class="text-xl lg:text-3xl group-hover:text-pink-500 transition duration-300">
+            <a href="#gift" class="text-xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-gift-fill"></i>
             </a>
           </li>
           <li class="group">
-            <a href="#ucapan" class="text-xl lg:text-3xl group-hover:text-pink-500 transition duration-300">
+            <a href="#ucapan" class="text-xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-chat-square-dots-fill"></i>
             </a>
           </li>
@@ -74,48 +74,61 @@
     </nav>
 
     <!-- hero -->
-    <!-- <section id="hero" class="h-[100vh] w-full bg-[url('assets/img/bg.jpg')] flex items-center text-center justify-center bg-cover bg-center">
+    <!-- <section
+      id="hero"
+      class="min-h-screen w-full before:content[''] before:w-full before:top-0 before:left-0 before:bg-center before:bg-cover before:grayscale-[80%] relative before:absolute before:-z-50 before:h-full before:bg-[url('assets/img/bg.jpg')] flex items-center text-center justify-center bg-cover bg-center"
+    >
       <div class="container">
         <div class="text-center">
-          <h3 class="font-rouge text-4xl md:text-6xl">The Wedding of</h3>
-          <h1 class="font-rouge font-bold text-7xl md:text-8xl md:py-6">
+          <h3 class="text-xl font-baloo text-sage pb-5">Undangan Pernikahan</h3>
+          <h1 class="text-7xl md:text-[5.5rem] text-primary font-bold font-rouge">
             Lanabae <br class="md:hidden" />&<br class="md:hidden" />
             Lanabae
           </h1>
-          <p class="font-baloo text-base lg:text-2xl">07 . 08 . 2024</p>
-          <p class="text-base md:text-xl font-baloo font-semibold pt-4 md:pt-8 lg:pt-20 md:pb-1 lg:pb-3">Kepada</p>
-          <span class="font-bold font-baloo text-2xl md:text-4xl">Lanabae</span>
-          
-          <a href="#home" class="w-[180px] md:w-[200px] mt-8 lg:mt-12 mx-auto py-1 md:py-2 block text-white bg-pink-400 rounded-full"> <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a>
+          <p class="text-base md:text-lg font-baloo pt-3 md:pt-0 text-sage">Akan melangsungkan resepsi pernikahan dalam :</p>
+          <p class="font-baloo text-xl font-semibold pt-2 pb-8 text-sage">Rabu, 15 Maret 2023</p>
+          <a href="#orang" class="px-5 py-2 text-beige shadow-lg bg-primary rounded-full"> <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a>
         </div>
       </div>
     </section> -->
-
-    <!-- home -->
-    <section id="home" class="w-full h-[100vh] bg-center bg-cover flex justify-center">
-      <div class="bg-[url('assets/img/bg.jpg')] w-full h-full lg:w-1/2 bg-center bg-cover bg-no-repeat relative lg:static"></div>
-      <div class="lg:w-1/2 h-full w-full flex items-center justify-center absolute bg-transparent lg:static">
+    <section id="hero" class="min-h-screen w-full flex items-center text-center justify-center bg-cover bg-center">
+      <div class="container">
         <div class="text-center">
-          <h3 class="text-xl font-baloo pb-5">Undangan Pernikahan</h3>
-          <h1 class="text-7xl md:text-[5.5rem] font-bold font-rouge">
-            Lanabae <br class="md:hidden" />&<br class="md:hidden" />
-            Lanabae
-          </h1>
-          <p class="text-base md:text-lg font-baloo pt-3 md:pt-0">Akan melangsungkan resepsi pernikahan dalam :</p>
-          <p class="font-baloo text-xl font-semibold pt-2 pb-8">Rabu, 15 Maret 2023</p>
-          <!-- <div class="simply-countdown mx-auto py-4"></div> -->
-          <!-- <a href="#orang" class="px-5 py-2 text-white shadow-lg bg-pink-400 rounded-full"> <i class="bi bi-calendar-week mr-2"></i>Save The Date</a> -->
-          <a href="#orang" class="px-5 py-2 text-white shadow-lg bg-pink-400 rounded-full"> <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a>
+          <h3 class="md:text-xl font-baloo pb-7 text-sage">Undangan Pernikahan</h3>
+          <h1 class="text-5xl md:text-7xl lg:text-9xl text-primary font-rouge font-bold">Lanabae & Lanabae</h1>
+          <p class="font-baloo md:text-xl text-sage pt-5 pb-4">Akan melangsungkan resepsi pernikahan pada:</p>
+          <p class="font-baloo font-semibold text-sage md:text-2xl pb-10">Rabu, 15 Maret 2023</p>
+
+          <a href="#orang" class="text-sm px-4 py-2 md:px-5 text-beige shadow-lg bg-primary rounded-full"> <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a>
         </div>
       </div>
     </section>
 
+    <!-- home -->
+    <!-- <section id="home" class="w-full h-[100vh] bg-center bg-cover flex justify-center">
+      <div class="bg-[url('assets/img/bg.jpg')] w-full h-full lg:w-1/2 bg-center bg-cover bg-no-repeat relative lg:static"></div>
+      <div class="lg:w-1/2 h-full w-full flex items-center justify-center absolute bg-transparent lg:bg-beige lg:static">
+        <div class="text-center">
+          <h3 class="text-xl font-baloo text-sage pb-5">Undangan Pernikahan</h3>
+          <h1 class="text-7xl md:text-[5.5rem] text-primary font-bold font-rouge">
+            Lanabae <br class="md:hidden" />&<br class="md:hidden" />
+            Lanabae
+          </h1>
+          <p class="text-base md:text-lg font-baloo pt-3 md:pt-0 text-sage">Akan melangsungkan resepsi pernikahan dalam :</p>
+          <p class="font-baloo text-xl font-semibold pt-2 pb-8 text-sage">Rabu, 15 Maret 2023</p>
+          <div class="simply-countdown mx-auto py-4"></div>
+          <a href="#orang" class="px-5 py-2 text-white shadow-lg bg-pink-400 rounded-full"> <i class="bi bi-calendar-week mr-2"></i>Save The Date</a>
+          <a href="#orang" class="px-5 py-2 text-beige shadow-lg bg-primary rounded-full"> <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a>
+        </div>
+      </div>
+    </section> -->
+
     <!-- orang -->
-    <section id="orang" class="bg-slate-100 min-h-screen w-full py-10 lg:py-16">
+    <section id="orang" class="min-h-screen w-full py-10 lg:py-16">
       <div class="container">
         <div class="text-center">
-          <h2 class="font-rouge text-4xl lg:text-6xl font-semibold mb-2">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
-          <p class="text-[.8rem] lg:text-base font-baloo">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
+          <h2 class="font-rouge text-4xl text-primary lg:text-7xl font-semibold mb-2">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+          <p class="text-[.8rem] text-sage lg:text-base font-baloo">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
         </div>
         <div class="lg:flex justify-center pt-6 lg:pt-24">
           <div class="lg:w-[45%] flex items-center flex-row-reverse">
@@ -123,29 +136,29 @@
               <img src="dist/assets/img/foto.jpg" />
             </div>
             <div class="text-right mr-3">
-              <h3 class="lg:text-5xl text-3xl font-rouge font-bold">Lanabae Lanabae</h3>
-              <p class="font-normal text-[.8rem] lg:text-base leading-tight mb-2 font-baloo">
+              <h3 class="lg:text-5xl text-3xl font-rouge text-primary font-bold">Lanabae Lanabae</h3>
+              <p class="font-normal text-[.8rem] lg:text-base leading-tight text-sage mb-2 font-baloo">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nihil vel, dolorem aperiam beatae, impedit nisi cum voluptatibus accusamus ut ad. Culpa error aut quisquam numquam quae repudiandae!
               </p>
-              <p class="font-baloo font-semibold leading-tight">
+              <p class="font-baloo font-semibold text-primary leading-tight">
                 Putra <br />
                 Bapak Lorem & Ibu Ipsum
               </p>
             </div>
           </div>
           <div class="hidden lg:flex lg:w-[10%] items-center justify-center">
-            <h1 class="lg:text-8xl font-bold font-rouge">&</h1>
+            <h1 class="lg:text-8xl font-bold text-primary font-rouge">&</h1>
           </div>
           <div class="lg:w-[45%] h-fit flex items-center pt-6 lg:pt-0">
             <div class="w-[400px] lg:w-[700px] h-fit rounded-full overflow-hidden">
               <img src="dist/assets/img/foto.jpg" />
             </div>
             <div class="ml-3">
-              <h3 class="text-3xl lg:text-5xl font-rouge font-bold">Lanabae Lanabae</h3>
-              <p class="font-normal text-[.8rem] lg:text-base leading-tight mb-2 font-baloo">
+              <h3 class="text-3xl lg:text-5xl font-rouge font-bold text-primary">Lanabae Lanabae</h3>
+              <p class="font-normal text-[.8rem] lg:text-base leading-tight text-sage mb-2 font-baloo">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nihil vel, dolorem aperiam beatae, impedit nisi cum voluptatibus accusamus ut ad. Culpa error aut quisquam numquam quae repudiandae!
               </p>
-              <p class="font-baloo font-semibold leading-tight">
+              <p class="font-baloo text-primary font-semibold leading-tight">
                 Putra <br />
                 Bapak Lorem & Ibu Ipsum
               </p>
@@ -156,18 +169,18 @@
     </section>
 
     <!-- Tanggal -->
-    <section id="tanggal" class="w-full min-h-screen text-center flex justify-center py-16 bg-[url('assets/img/bg.jpg')] bg-cover bg-center">
+    <section id="tanggal" class="w-full min-h-screen text-center flex justify-center py-16 bg-cover bg-center">
       <div class="container">
-        <h1 class="font-rouge text-6xl font-bold pb-8">Waktu Menuju Acara</h1>
-        <div class="simply-countdown rounded-xl mx-auto border-[2px] border-pink-500"></div>
-        <p class="font-baloo font-bold text-base lg:text-lg lg:px-20 py-8">
+        <h1 class="font-rouge text-7xl font-bold text-primary pb-8">Waktu Menuju Acara</h1>
+        <div class="simply-countdown rounded-xl mx-auto border-[2px] border-primary"></div>
+        <p class="font-baloo font-bold text-base lg:text-lg lg:px-20 py-8 text-sage">
           Bahagia rasanya apabila anda berkenan hadir dan memberikan doa restu kepada kami. Kami mengundang anda untuk hadir dalam acara resepsi pernikahan kami berikut ini:
         </p>
 
         <div class="flex flex-wrap justify-evenly">
-          <div class="border-[2px] border-pink-500 bg-white/10 backdrop-blur-sm w-[90%] md:w-[45%] lg:w-2/5 h-72 md:h-60 rounded-xl shadow-md shadow-slate-900 mb-8">
-            <h1 class="py-2 text-3xl lg:text-4xl font-bold font-rouge border-b-2 border-pink-500">Akad Nikah</h1>
-            <div class="flex flex-wrap justify-evenly pb-4 md:pb-9">
+          <div class="border-[2px] border-primary bg-sage/10 backdrop-blur-sm w-[90%] md:w-[45%] lg:w-2/5 h-72 md:h-60 rounded-xl shadow-md shadow-primary mb-8">
+            <h1 class="py-2 text-3xl lg:text-4xl font-bold font-rouge border-b-2 text-primary border-primary">Akad Nikah</h1>
+            <div class="flex flex-wrap justify-evenly text-primary pb-4 md:pb-9">
               <div class="w-full md:w-2/5 pt-3">
                 <i class="bi bi-calendar-week-fill"></i>
                 <p>Rabu</p>
@@ -179,11 +192,11 @@
                 <p>08.00 - Selesai</p>
               </div>
             </div>
-            <a href="" class="bg-pink-500 rounded-full text-white py-2 px-6"><i class="bi bi-calendar-week mr-2"></i> Add to Calendar</a>
+            <a href="" class="bg-primary border-primary rounded-full text-beige py-2 px-6"><i class="bi bi-calendar-week mr-2"></i> Add to Calendar</a>
           </div>
-          <div class="border-[2px] border-pink-500 bg-white/10 backdrop-blur-sm w-[90%] md:w-[45%] lg:w-2/5 h-72 md:h-60 rounded-xl shadow-md shadow-slate-900 mb-8">
-            <h1 class="py-2 text-3xl lg:text-4xl font-bold font-rouge border-b-2 border-pink-500">Resepsi</h1>
-            <div class="flex flex-wrap justify-evenly pb-4 md:pb-9">
+          <div class="border-[2px] border-primary bg-sage/10 backdrop-blur-sm w-[90%] md:w-[45%] lg:w-2/5 h-72 md:h-60 rounded-xl shadow-md shadow-primary mb-8">
+            <h1 class="py-2 text-3xl lg:text-4xl font-bold font-rouge text-primary border-b-2 border-primary">Resepsi</h1>
+            <div class="flex flex-wrap justify-evenly text-primary pb-4 md:pb-9">
               <div class="w-full md:w-2/5 pt-3">
                 <i class="bi bi-calendar-week-fill"></i>
                 <p>Rabu</p>
@@ -195,18 +208,18 @@
                 <p>13.00 - Selesai</p>
               </div>
             </div>
-            <a href="" class="bg-pink-500 rounded-full text-white py-2 px-6"><i class="bi bi-calendar-week mr-2"></i> Add to Calendar</a>
+            <a href="" class="bg-primary border-primary rounded-full text-beige py-2 px-6"><i class="bi bi-calendar-week mr-2"></i> Add to Calendar</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Map -->
-    <section id="map" class="min-h-screen w-full bg-slate-200 py-16 flex justify-center text-center">
+    <section id="map" class="min-h-screen w-full py-16 flex justify-center text-center">
       <div class="container">
-        <h1 class="font-rouge text-6xl font-bold pb-6">Peta Lokasi Acara</h1>
-        <p class="pb-8 font-baloo text-lg">Anda dapat menuju lokasi acara kami dengan bantuan peta dibawah ini. Atau anda bisa buka di:</p>
-        <a href="https://maps.app.goo.gl/1G9v7iUkBeGpgSHC8" class="px-6 py-2 text-white bg-pink-500 rounded-full">Buka Google Maps</a>
+        <h1 class="font-rouge text-7xl text-primary font-bold pb-6">Peta Lokasi Acara</h1>
+        <p class="pb-8 font-baloo text-lg text-sage">Anda dapat menuju lokasi acara kami dengan bantuan peta dibawah ini. Atau anda bisa buka di:</p>
+        <a href="https://maps.app.goo.gl/1G9v7iUkBeGpgSHC8" class="px-6 py-2 text-beige bg-primary rounded-full">Buka Google Maps</a>
         <div class="w-full justify-center flex pt-10">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15825.248061127579!2d109.81724378251025!3d-7.430683103631809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa43f77f51b73%3A0xf4b5a1a8fac920ce!2sTunggara%2C%20Kec.%20Sigaluh%2C%20Kab.%20Banjarnegara%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1701007379539!5m2!1sid!2sid"
@@ -223,8 +236,8 @@
     <!-- galeri -->
     <section id="galeri" class="min-h-screen w-full py-16 flex justify-center text-center">
       <div class="container">
-        <p>Memori Kisah Kami</p>
-        <h1 class="font-rouge text-6xl font-bold pb-14 pt-3">Galeri Photo</h1>
+        <p class="text-sage">Memori Kisah Kami</p>
+        <h1 class="font-rouge text-7xl text-primary font-bold pb-14 pt-3">Galeri Photo</h1>
         <div class="grid grid-cols-2 justify-center mx-auto md:grid-cols-3 w-full md:w-[85%] gap-4">
           <div class="grid gap-4">
             <div>
@@ -267,16 +280,16 @@
     </section>
 
     <!-- Gift -->
-    <section id="gift" class="min-h-screen w-full bg-slate-200 flex justify-center text-center py-16">
+    <section id="gift" class="min-h-screen w-full flex justify-center text-center py-16">
       <div class="container">
-        <h1 class="font-rouge text-6xl font-bold pb-6 pt-3">Kirim Kado</h1>
-        <p class="font-baloo text-base pb-8 lg:px-16">
+        <h1 class="font-rouge text-7xl text-primary font-bold pb-6 pt-3">Kirim Kado</h1>
+        <p class="font-baloo text-base text-sage pb-8 lg:px-16">
           Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah ini. Sebelumnya, kami mengucapkan banyak terima kasih.
         </p>
         <div class="flex flex-wrap justify-evenly w-full">
-          <div class="w-[80%] md:w-[40%] bg-white rounded-xl py-5 shadow-xl mb-8">
+          <div class="w-[80%] md:w-[40%] bg-sage rounded-xl py-5 shadow-xl mb-8">
             <img src="dist/assets/img/gallery/nail/1.jpg" alt="" class="mx-auto" />
-            <div class="w-full flex py-6">
+            <div class="w-full flex text-beige py-6">
               <div class="w-1/2">
                 <h1 class="font-semibold">Nama</h1>
                 <p>Lanabae</p>
@@ -286,11 +299,11 @@
                 <p>0123456789</p>
               </div>
             </div>
-            <a href="" class="bg-pink-500 py-2 px-6 rounded-full text-white"><i class="bi bi-copy mr-2"></i> Salin Rekening</a>
+            <a href="" class="bg-primary py-2 px-6 rounded-full text-beige"><i class="bi bi-copy mr-2"></i> Salin Rekening</a>
           </div>
-          <div class="w-[80%] md:w-[40%] bg-white rounded-xl py-5 shadow-xl mb-8">
+          <div class="w-[80%] md:w-[40%] bg-sage rounded-xl py-5 shadow-xl mb-8">
             <img src="dist/assets/img/gallery/nail/1.jpg" alt="" class="mx-auto" />
-            <div class="w-full flex py-6">
+            <div class="w-full text-beige flex py-6">
               <div class="w-1/2">
                 <h1 class="font-semibold">Nama</h1>
                 <p>Lanabae</p>
@@ -300,7 +313,7 @@
                 <p>0123456789</p>
               </div>
             </div>
-            <a href="" class="bg-pink-500 py-2 px-6 rounded-full text-white"><i class="bi bi-copy mr-2"></i> Salin Rekening</a>
+            <a href="" class="bg-primary py-2 px-6 rounded-full text-beige"><i class="bi bi-copy mr-2"></i> Salin Rekening</a>
           </div>
         </div>
       </div>
@@ -309,16 +322,16 @@
     <!-- Ucapan -->
     <section id="ucapan" class="w-full flex justify-center py-16">
       <div class="container">
-        <h1 class="font-rouge text-6xl font-bold pb-6 pt-3 text-center">Ucapan & Doa</h1>
+        <h1 class="font-rouge text-7xl font-bold pb-6 pt-3 text-primary text-center">Ucapan & Doa</h1>
 
         <form class="w-[80%] md:w-2/3 lg:w-1/2 mx-auto pt-16">
           <div class="relative z-0 w-full mb-5 group">
-            <label for="name" class="text-sm text-pink-600 top-3">Nama</label>
+            <label for="name" class="font-semibold text-primary top-3">Nama</label>
             <input
               type="text"
               name="name"
               id="name"
-              class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-pink-500"
+              class="block py-2.5 px-0 w-full text-base text-primary bg-transparent border-0 border-b-2 border-sage appearance-none focus:outline-none focus:ring-0 focus:border-primary placeholder:text-sage"
               autocomplete="off"
               placeholder="Nama Anda "
               required
@@ -326,38 +339,38 @@
           </div>
 
           <div class="relative z-0 w-full mb-5 group">
-            <label for="textarea" class="text-sm top-3 text-pink-600">Ucapan & Doa</label>
+            <label for="textarea" class="top-3 font-semibold text-primary">Ucapan & Doa</label>
             <textarea
               name="textarea"
               id="textarea"
-              class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-pink-500"
-              placeholder=" Doa Anda "
+              class="block py-2.5 px-0 w-full text-base text-primary bg-transparent border-0 border-b-2 border-sage appearance-none focus:outline-none focus:ring-0 focus:border-primary placeholder:text-sage"
+              placeholder="Harapan dan Doa "
               required
               rows="5"
             ></textarea>
           </div>
 
-          <p class="font-baloo font-semibold">Apakah anda akan hadir memenuhi undangan saya?</p>
+          <p class="font-baloo font-semibold text-primary">Apakah anda akan hadir memenuhi undangan saya?</p>
           <div class="md:flex pt-3">
             <div class="flex items-center mb-4 w-full md:w-1/2">
-              <input id="hadir" type="radio" name="kehadiran" class="w-4 h-4" />
-              <label for="hadir" class="block ms-2 text-sm font-medium text-gray-900"> Saya akan hadir </label>
+              <input id="hadir" type="radio" name="kehadiran" class="w-4 h-4 accent-primary peer" checked />
+              <label for="hadir" class="block ms-2 text-sm font-medium text-sage peer-checked:text-primary"> Saya akan hadir </label>
             </div>
             <div class="flex items-center mb-4 w-full md:w-1/2">
-              <input id="tidak" type="radio" name="kehadiran" class="w-4 h-4" />
-              <label for="tidak" class="block ms-2 text-sm font-medium text-gray-900"> Mohon maaf, belum bisa hadir </label>
+              <input id="tidak" type="radio" name="kehadiran" class="w-4 h-4 accent-primary peer" />
+              <label for="tidak" class="block ms-2 text-sm font-medium text-sage peer-checked:text-primary"> Mohon maaf, belum bisa hadir </label>
             </div>
           </div>
 
-          <button type="submit" class="text-white bg-pink-600 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Kirim</button>
+          <button type="submit" class="text-beige bg-primary focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Kirim</button>
         </form>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="w-full bg-pink-500 flex justify-center text-center h-24 md:h-28">
+    <footer class="w-full bg-primary flex justify-center text-center h-24 md:h-28">
       <div class="container">
-        <p class="font-semibold text-white text-sm pt-2 md:pt-3 lg:pt-2">&copy; 2023 All Right Reserved.</p>
+        <p class="font-semibold text-beige text-sm pt-2 md:pt-3 lg:pt-2">&copy; 2023 All Right Reserved.</p>
       </div>
     </footer>
 

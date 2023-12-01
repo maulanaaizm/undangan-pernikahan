@@ -26,7 +26,7 @@
 }
 
 .simply-countdown {
-  @apply w-full md:w-[90%] lg:w-[85%] bg-white/10 backdrop-blur-sm shadow-md shadow-slate-900;
+  @apply w-full md:w-[90%] lg:w-[85%] bg-white/10 backdrop-blur-sm shadow-md shadow-primary;
 }
 
 .simply-countdown > .simply-section .simply-amount {
@@ -46,5 +46,5 @@
 }
 
 .active {
-  @apply text-pink-700;
+  @apply text-primary;
 }
