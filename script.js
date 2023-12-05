@@ -1,22 +1,22 @@
 // Loading Page
-// const refreshPage = () => {
-//   location.reload();
-// };
-// const playLoader = () => {
-//   let loader = document.querySelector(".load-wrapper");
-//   let bodyLoad = document.querySelector("body");
-//   loader.style.display = "none";
-//   bodyLoad.classList.remove("overflow-hidden");
-// };
-// const stopLoader = () => {
-//   let loader = document.querySelector(".load-wrapper");
-//   loader.style.display = "none";
-// };
-// window.addEventListener("load", () => {
-//   let bodyLoad = document.querySelector("body");
-//   bodyLoad.classList.add("overflow-hidden");
-//   setTimeout(playLoader, 2500);
-// });
+const refreshPage = () => {
+  location.reload();
+};
+const playLoader = () => {
+  let loader = document.querySelector(".load-wrapper");
+  let bodyLoad = document.querySelector("body");
+  loader.style.display = "none";
+  bodyLoad.classList.remove("overflow-hidden");
+};
+const stopLoader = () => {
+  let loader = document.querySelector(".load-wrapper");
+  loader.style.display = "none";
+};
+window.addEventListener("load", () => {
+  let bodyLoad = document.querySelector("body");
+  bodyLoad.classList.add("overflow-hidden");
+  setTimeout(playLoader, 2500);
+});
 
 // Navbar
 const navbar = document.querySelector("nav");
