@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-beige font-baloo;
+}
+
 .progress-bar {
   @apply z-[9999];
   animation-timeline: scroll();
@@ -26,7 +30,7 @@
 }
 
 .simply-countdown {
-  @apply w-full md:w-[90%] lg:w-[85%] bg-white/10 backdrop-blur-sm shadow-md shadow-primary;
+  @apply w-full md:w-[90%] lg:w-[85%] bg-transparent backdrop-blur-sm shadow-md shadow-primary;
 }
 
 .simply-countdown > .simply-section .simply-amount {
@@ -34,7 +38,7 @@
 }
 
 .simply-countdown > .simply-section .simply-word {
-  @apply text-base lg:text-xl;
+  @apply text-base lg:text-xl -mt-2;
 }
 @keyframes fadeUp {
   0% {
@@ -47,4 +51,8 @@
 
 .active {
   @apply text-primary;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
