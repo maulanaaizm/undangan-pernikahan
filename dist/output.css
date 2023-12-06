@@ -653,16 +653,16 @@ video {
   margin-left: 0.75rem;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mr-\[2px\] {
+  margin-right: 2px;
 }
 
 .ms-2 {
@@ -693,12 +693,12 @@ video {
   height: 6rem;
 }
 
-.h-4 {
-  height: 1rem;
+.h-3 {
+  height: 0.75rem;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-4 {
+  height: 1rem;
 }
 
 .h-\[100vh\] {
@@ -734,12 +734,12 @@ video {
   width: 40%;
 }
 
-.w-4 {
-  width: 1rem;
+.w-3 {
+  width: 0.75rem;
 }
 
-.w-5 {
-  width: 1.25rem;
+.w-4 {
+  width: 1rem;
 }
 
 .w-\[120px\] {
@@ -930,10 +930,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-\[2px\] {
-  padding: 2px;
 }
 
 .px-0 {
@@ -1173,12 +1169,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-primary {
   --tw-shadow-color: #5f6f52;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1239,7 +1229,7 @@ body {
 }
 
 .loading .love5 {
-  animation-delay: -1.5s;
+  animation-delay: -1.25s;
 }
 
 .simply-countdown {
@@ -1435,12 +1425,6 @@ body {
   border-top-color: transparent;
 }
 
-.before\:bg-brown::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 148 112 / var(--tw-bg-opacity));
-}
-
 .before\:bg-primary::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
@@ -1616,8 +1600,8 @@ body {
     height: 7rem;
   }
 
-  .md\:h-8 {
-    height: 2rem;
+  .md\:h-5 {
+    height: 1.25rem;
   }
 
   .md\:h-\[150px\] {
@@ -1632,8 +1616,8 @@ body {
     width: 66.666667%;
   }
 
-  .md\:w-8 {
-    width: 2rem;
+  .md\:w-5 {
+    width: 1.25rem;
   }
 
   .md\:w-\[150px\] {
@@ -1732,16 +1716,20 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
   .lg\:flex {
     display: flex;
   }
 
   .lg\:h-40 {
     height: 10rem;
+  }
+
+  .lg\:h-5 {
+    height: 1.25rem;
+  }
+
+  .lg\:h-4 {
+    height: 1rem;
   }
 
   .lg\:w-1\/2 {
@@ -1770,6 +1758,14 @@ body {
 
   .lg\:w-\[700px\] {
     width: 700px;
+  }
+
+  .lg\:w-5 {
+    width: 1.25rem;
+  }
+
+  .lg\:w-4 {
+    width: 1rem;
   }
 
   .lg\:p-8 {
