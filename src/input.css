@@ -30,7 +30,7 @@ body {
 }
 
 .simply-countdown {
-  @apply w-full md:w-[90%] lg:w-[85%] bg-transparent backdrop-blur-sm shadow-md shadow-primary;
+  @apply w-full md:w-[90%] bg-transparent backdrop-blur-sm shadow-md shadow-primary;
 }
 
 .simply-countdown > .simply-section .simply-amount {

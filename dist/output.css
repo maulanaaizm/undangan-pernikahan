@@ -612,12 +612,12 @@ video {
   z-index: 0;
 }
 
-.z-50 {
-  z-index: 50;
+.z-40 {
+  z-index: 40;
 }
 
-.z-\[999\] {
-  z-index: 999;
+.z-50 {
+  z-index: 50;
 }
 
 .float-right {
@@ -826,6 +826,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -1229,12 +1233,6 @@ body {
 @media (min-width: 768px) {
   .simply-countdown {
     width: 90%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .simply-countdown {
-    width: 85%;
   }
 }
 
