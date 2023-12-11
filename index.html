@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Invitation</title>
 
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600;700&family=Rouge+Script&display=swap" rel="stylesheet" />
 
+    <!-- Simply Countdown -->
     <link rel="stylesheet" href="simplycountdown/simplyCountdown.theme.default.css" />
     <script src="simplycountdown/simplyCountdown.min.js"></script>
 
+    <!-- AOS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
     <!-- progress bar -->
-    <div class="w-full h-[4px] bg-primary animate-progress progress-bar fixed top-0 left-0 rounded-full"></div>
+    <div class="w-full h-[4px] bg-primary animate-progress z-40 progress-bar fixed top-0 left-0 rounded-full"></div>
 
     <!-- Loading menu -->
-    <div class="fixed min-h-screen bg-beige w-full z-40 flex items-center justify-center overflow-hidden load-wrapper">
+    <div class="fixed min-h-screen bg-beige w-full z-50 flex items-center justify-center overflow-hidden load-wrapper">
       <div class="loading h-[100vh] w-full flex items-center justify-center text-center z-50">
         <span class="love1 w-2 h-2 lg:w-4 lg:h-4 rounded-full bg-primary text-pink-600 mr-[1px]"></span>
         <span class="love2 w-2 h-2 lg:w-4 lg:h-4 rounded-full bg-sage text-pink-600 mr-[1px]"></span>
@@ -34,41 +39,41 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar hidden w-full md:w-2/3 lg:w-1/2 bg-sage backdrop-blur-sm z-50 fixed bottom-0 md:bottom-2 left-1/2 -translate-x-2/4 py-4 items-center rounded-t-xl md:rounded-xl">
+    <nav class="navbar hidden w-full md:w-2/3 lg:w-1/2 3xl:w-[55%] bg-sage backdrop-blur-sm z-40 fixed bottom-0 md:bottom-2 left-1/2 -translate-x-2/4 py-4 items-center rounded-t-xl md:rounded-xl">
       <div class="container">
-        <ul class="flex justify-between md:justify-around items-center">
+        <ul class="flex justify-between md:justify-around items-center 3xl:h-20">
           <li class="group">
-            <a href="#home" class="text-2xl lg:text-3xl group-hover:text-primary text-beige transition duration-300"> <i class="bi bi-house-door-fill"></i> </a>
+            <a href="#home" class="text-2xl lg:text-3xl 3xl:text-5xl group-hover:text-primary text-beige transition duration-300"> <i class="bi bi-house-door-fill"></i> </a>
           </li>
           <li class="group">
-            <a href="#orang" class="text-2xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
+            <a href="#orang" class="text-2xl lg:text-3xl 3xl:text-5xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-person-hearts"></i>
             </a>
           </li>
           <li class="group">
-            <a href="#tanggal" class="text-2xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
+            <a href="#tanggal" class="text-2xl lg:text-3xl 3xl:text-5xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-calendar2-week-fill"></i>
             </a>
           </li>
 
           <li class="group">
-            <a href="#story" class="text-2xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
+            <a href="#story" class="text-2xl lg:text-3xl 3xl:text-5xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-bookmarks-fill"></i>
             </a>
           </li>
 
           <li class="group">
-            <a href="#galeri" class="text-2xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
+            <a href="#galeri" class="text-2xl lg:text-3xl 3xl:text-5xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-image-alt"></i>
             </a>
           </li>
           <li class="group">
-            <a href="#gift" class="text-2xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
+            <a href="#gift" class="text-2xl lg:text-3xl 3xl:text-5xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-gift-fill"></i>
             </a>
           </li>
           <li class="group">
-            <a href="#ucapan" class="text-2xl lg:text-3xl group-hover:text-primary text-beige transition duration-300">
+            <a href="#ucapan" class="text-2xl lg:text-3xl 3xl:text-5xl group-hover:text-primary text-beige transition duration-300">
               <i class="bi bi-chat-square-dots-fill"></i>
             </a>
           </li>
@@ -79,11 +84,13 @@
     <!-- home -->
     <section id="home" class="min-h-screen w-full flex items-center text-center justify-center">
       <div class="container">
-        <h3 class="md:text-xl pb-7 text-sage">Undangan Pernikahan</h3>
-        <h1 class="text-5xl md:text-7xl lg:text-9xl text-primary font-rouge font-bold">Lanabae & Lanabae</h1>
-        <p class="text-sm md:text-lg text-sage pt-5 pb-4">Akan melangsungkan resepsi pernikahan pada:</p>
-        <p class="font-bold text-brown md:text-2xl pb-10">Rabu, 15 Maret 2023</p>
-        <a href="#orang" class="text-sm px-4 py-2 md:px-5 text-beige shadow-md shadow-primary hover:shadow-brown bg-primary rounded-full hover:bg-brown transition duration-500"> <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a>
+        <h3 class="md:text-xl pb-7 3xl:text-2xl font-semibold text-sage">Undangan Pernikahan</h3>
+        <h1 class="text-5xl md:text-7xl lg:text-9xl 3xl:text-[180px] text-primary font-rouge font-bold">Lanabae & Lanabae</h1>
+        <p class="text-sm md:text-lg 3xl:text-2xl font-semibold text-sage pt-5 pb-4">Akan melangsungkan resepsi pernikahan pada:</p>
+        <p class="font-bold text-brown md:text-xl 3xl:text-3xl pb-10">Rabu, 15 Maret 2023</p>
+        <a href="#orang" class="text-sm 3xl:text-2xl px-4 py-2 md:px-5 text-beige shadow-md shadow-primary hover:shadow-brown bg-primary rounded-full hover:bg-brown transition duration-500">
+          <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a
+        >
       </div>
     </section>
 
@@ -91,20 +98,20 @@
     <section id="orang" class="min-h-screen w-full py-16">
       <div class="container">
         <div class="text-center">
-          <h2 class="font-rouge text-4xl text-primary lg:text-6xl font-semibold mb-2">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
-          <p class="md:text-base text-[.8rem] text-brown lg:text-base">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
+          <h2 class="font-rouge text-4xl text-primary lg:text-7xl 3xl:text-[5rem] font-semibold mb-2">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+          <p class="md:text-base text-sm 3xl:text-xl text-brown lg:text-base">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
         </div>
         <div class="lg:flex justify-center pt-20 lg:pt-24 overflow-hidden">
           <div class="lg:w-[45%] flex items-center flex-row-reverse" data-aos="fade-right" data-aos-duration="1500">
-            <div class="w-[400px] lg:w-[700px] rounded-full overflow-hidden">
+            <div class="w-[400px] lg:w-[700px] 3xl:w-[1000px] rounded-full overflow-hidden">
               <img src="dist/assets/img/foto.jpg" alt="Orang1" />
             </div>
             <div class="text-right mr-3">
-              <h3 class="lg:text-5xl text-3xl font-rouge text-primary font-bold">Lanabae Lanabae</h3>
-              <p class="font-normal md:text-base text-[.8rem] lg:text-base leading-tight text-brown mb-2">
+              <h3 class="text-3xl lg:text-5xl 3xl:text-6xl font-rouge font-bold text-primary">Lanabae Lanabae</h3>
+              <p class="font-normal text-sm md:text-base 3xl:text-lg leading-tight text-brown mb-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nihil vel, dolorem aperiam beatae, impedit nisi cum voluptatibus accusamus ut ad. Culpa error aut quisquam numquam quae repudiandae!
               </p>
-              <p class="font-semibold text-primary leading-tight">
+              <p class="text-primary 3xl:text-xl font-semibold leading-tight">
                 Putra <br />
                 Bapak Lorem & Ibu Ipsum
               </p>
@@ -114,15 +121,15 @@
             <h1 class="lg:text-8xl font-bold text-primary font-rouge">&</h1>
           </div>
           <div class="lg:w-[45%] h-fit flex items-center pt-20 lg:pt-0" data-aos="fade-left" data-aos-duration="1500">
-            <div class="w-[400px] lg:w-[700px] h-fit rounded-full overflow-hidden">
+            <div class="w-[400px] lg:w-[700px] 3xl:w-[1000px] h-fit rounded-full overflow-hidden">
               <img src="dist/assets/img/foto.jpg" alt="Orang1" />
             </div>
             <div class="ml-3">
-              <h3 class="text-3xl lg:text-5xl font-rouge font-bold text-primary">Lanabae Lanabae</h3>
-              <p class="font-normal text-[.8rem] md:text-base lg:text-base leading-tight text-brown mb-2">
+              <h3 class="text-3xl lg:text-5xl 3xl:text-6xl font-rouge font-bold text-primary">Lanabae Lanabae</h3>
+              <p class="font-normal text-sm md:text-base 3xl:text-lg leading-tight text-brown mb-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nihil vel, dolorem aperiam beatae, impedit nisi cum voluptatibus accusamus ut ad. Culpa error aut quisquam numquam quae repudiandae!
               </p>
-              <p class="text-primary font-semibold leading-tight">
+              <p class="text-primary 3xl:text-xl font-semibold leading-tight">
                 Putra <br />
                 Bapak Lorem & Ibu Ipsum
               </p>
@@ -135,9 +142,9 @@
     <!-- Tanggal -->
     <section id="tanggal" class="w-full min-h-screen text-center flex justify-center py-16">
       <div class="container">
-        <h1 class="font-rouge text-7xl font-bold text-primary pb-8">Waktu Menuju Acara</h1>
+        <h1 class="font-rouge text-5xl lg:text-7xl 3xl:text-8xl font-bold text-primary pb-8">Waktu Menuju Acara</h1>
         <div class="simply-countdown rounded-xl mx-auto border-[2px] border-primary"></div>
-        <p class="font-bold text-base lg:text-lg py-6 lg:px-10 text-brown drop-shadow-xl">
+        <p class="text-base lg:text-lg 3xl:text-xl py-6 lg:px-10 text-brown">
           Bahagia rasanya apabila anda berkenan hadir dan memberikan doa restu kepada kami. Kami mengundang anda untuk hadir dalam acara resepsi pernikahan kami berikut ini:
         </p>
 
@@ -185,102 +192,101 @@
     <!-- Story -->
     <section id="story" class="w-full py-16 flex justify-center">
       <div class="container">
-        <p class="text-brown pb-3 text-center">Bagaimana Cinta Kami Bersemi</p>
-        <h1 class="text-7xl font-rouge font-bold text-center text-primary">Cerita Kami</h1>
-        <p class="text-brown pt-4 text-center lg:text-lg">Banyak cerita yang kami lalui sehingga akhirnya kami bisa bersatu, cerita yang akan kami kenang selalu, dan cerita itu kami bagi untuk anda.</p>
-        <div class="overflow-hidden">
-          <ul class="relative mt-8 py-6 px-0 before:top-0 before:bottom-0 before:content[''] before:absolute before:w-[2px] before:left-14 md:before:left-1/2 before:bg-primary">
-            <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both" data-aos-duration="2000" data-aos="zoom-in-right">
-              <div
-                class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
-              ></div>
-              <div
-                class="w-[65%] md:w-[35%] lg:w-2/5 float-right md:float-left p-4 lg:p-8 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-right-4 before:border-t-transparent before:border-t-[15px] before:border-l-[15px] before:border-l-brown before:border-r-0 before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-[14px] after:border-l-beige after:border-r-0 after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:-right-[13px] shadow-md shadow-primary"
-              >
-                <div class="">
-                  <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Pertama Bertemu</h3>
-                  <p class="uppercase mb-2 md:mb-4 text-sm md:text-base text-sage">1 Mei 2023</p>
-                </div>
-                <div class="">
-                  <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
-                </div>
+        <p class="text-brown text-sm md:text-base 3xl:text-xl pb-3 text-center">Bagaimana Cinta Kami Bersemi</p>
+        <h1 class="text-5xl lg:text-7xl 3xl:text-8xl font-rouge font-bold text-center text-primary">Cerita Kami</h1>
+        <p class="text-brown pt-4 text-center text-sm md:text-base lg:text-lg 3xl:text-xl">Banyak cerita yang kami lalui sehingga akhirnya kami bisa bersatu, cerita yang akan kami kenang selalu, dan cerita itu kami bagi untuk anda.</p>
+
+        <ul class="relative mt-8 py-6 px-0 before:top-0 before:bottom-0 before:content[''] before:absolute before:w-[2px] before:left-14 md:before:left-1/2 before:bg-primary">
+          <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both">
+            <div
+              class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
+            ></div>
+            <div
+              class="w-[65%] md:w-[35%] lg:w-2/5 float-right md:float-left p-4 lg:p-6 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-right-4 before:border-t-transparent before:border-t-[15px] before:border-l-[15px] before:border-l-brown before:border-r-0 before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-[14px] after:border-l-beige after:border-r-0 after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:-right-[13px] shadow-md shadow-primary"
+            >
+              <div class="">
+                <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Pertama Bertemu</h3>
+                <p class="mb-2 md:mb-4 text-sm md:text-base text-sage">1 Mei 2023</p>
               </div>
-            </li>
-            <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both" data-aos-duration="2000" data-aos="zoom-in-left">
-              <div
-                class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
-              ></div>
-              <div
-                class="w-[65%] md:w-[35%] lg:w-2/5 float-right p-4 lg:p-8 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-left-[16px] before:right-auto before:border-t-transparent before:border-t-[15px] before:border-l-0 before:border-l-brown before:border-r-[15px] before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-0 after:border-l-beige after:border-r-[14px] after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:right-auto after:-left-[13px] shadow-md shadow-primary"
-              >
-                <div class="">
-                  <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Masa Pendekatan</h3>
-                  <p class="uppercase mb-2 md:mb-4 text-sm md:text-base text-sage">1 juli 2023</p>
-                </div>
-                <div class="">
-                  <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
-                </div>
+              <div class="">
+                <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
               </div>
-            </li>
-            <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both" data-aos-duration="2000" data-aos="zoom-in-right">
-              <div
-                class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
-              ></div>
-              <div
-                class="w-[65%] md:w-[35%] lg:w-2/5 float-right md:float-left p-4 lg:p-8 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-right-4 before:border-t-transparent before:border-t-[15px] before:border-l-[15px] before:border-l-brown before:border-r-0 before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-[14px] after:border-l-beige after:border-r-0 after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:-right-[13px] shadow-md shadow-primary"
-              >
-                <div class="">
-                  <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Pertama Bertemu</h3>
-                  <p class="uppercase mb-2 md:mb-4 text-sm md:text-base text-sage">1 Mei 2023</p>
-                </div>
-                <div class="">
-                  <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
-                </div>
+            </div>
+          </li>
+          <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both">
+            <div
+              class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
+            ></div>
+            <div
+              class="w-[65%] md:w-[35%] lg:w-2/5 float-right p-4 lg:p-6 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-left-[16px] before:right-auto before:border-t-transparent before:border-t-[15px] before:border-l-0 before:border-l-brown before:border-r-[15px] before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-0 after:border-l-beige after:border-r-[14px] after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:right-auto after:-left-[13px] shadow-md shadow-primary"
+            >
+              <div class="">
+                <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Masa Pendekatan</h3>
+                <p class="mb-2 md:mb-4 text-sm md:text-base text-sage">1 Juli 2023</p>
               </div>
-            </li>
-            <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both" data-aos-duration="2000" data-aos="zoom-in-left">
-              <div
-                class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
-              ></div>
-              <div
-                class="w-[65%] md:w-[35%] lg:w-2/5 float-right p-4 lg:p-8 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-left-[16px] before:right-auto before:border-t-transparent before:border-t-[15px] before:border-l-0 before:border-l-brown before:border-r-[15px] before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-0 after:border-l-beige after:border-r-[14px] after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:right-auto after:-left-[13px] shadow-md shadow-primary"
-              >
-                <div class="">
-                  <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Masa Pendekatan</h3>
-                  <p class="uppercase mb-2 md:mb-4 text-sage text-sm md:text-base">1 juli 2023</p>
-                </div>
-                <div class="">
-                  <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
-                </div>
+              <div class="">
+                <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
               </div>
-            </li>
-            <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both" data-aos-duration="2000" data-aos="zoom-in-right">
-              <div
-                class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
-              ></div>
-              <div
-                class="w-[65%] md:w-[35%] lg:w-2/5 float-right md:float-left p-4 lg:p-8 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-right-4 before:border-t-transparent before:border-t-[15px] before:border-l-[15px] before:border-l-brown before:border-r-0 before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-[14px] after:border-l-beige after:border-r-0 after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:-right-[13px] shadow-md shadow-primary"
-              >
-                <div class="">
-                  <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Lamaran</h3>
-                  <p class="uppercase mb-2 md:mb-4 text-sm md:text-base text-sage">1 Mei 2023</p>
-                </div>
-                <div class="">
-                  <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
-                </div>
+            </div>
+          </li>
+          <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both">
+            <div
+              class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
+            ></div>
+            <div
+              class="w-[65%] md:w-[35%] lg:w-2/5 float-right md:float-left p-4 lg:p-6 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-right-4 before:border-t-transparent before:border-t-[15px] before:border-l-[15px] before:border-l-brown before:border-r-0 before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-[14px] after:border-l-beige after:border-r-0 after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:-right-[13px] shadow-md shadow-primary"
+            >
+              <div class="">
+                <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Jadian</h3>
+                <p class="mb-2 md:mb-4 text-sm md:text-base text-sage">1 Agustus 2023</p>
               </div>
-            </li>
-          </ul>
-        </div>
+              <div class="">
+                <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
+              </div>
+            </div>
+          </li>
+          <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both">
+            <div
+              class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
+            ></div>
+            <div
+              class="w-[65%] md:w-[35%] lg:w-2/5 float-right p-4 lg:p-6 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-left-[16px] before:right-auto before:border-t-transparent before:border-t-[15px] before:border-l-0 before:border-l-brown before:border-r-[15px] before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-0 after:border-l-beige after:border-r-[14px] after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:right-auto after:-left-[13px] shadow-md shadow-primary"
+            >
+              <div class="">
+                <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Masa Pendekatan</h3>
+                <p class="mb-2 md:mb-4 text-sage text-sm md:text-base">1 Juli 2023</p>
+              </div>
+              <div class="">
+                <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
+              </div>
+            </div>
+          </li>
+          <li class="relative mb-6 before:content[''] before:table after:table after:content[''] after:clear-both">
+            <div
+              class="bg-brown bg-[url('assets/img/foto.jpg')] w-[120px] md:w-[150px] lg:w-40 h-[120px] md:h-[150px] lg:h-40 absolute left-14 md:left-1/2 -translate-x-1/2 bg-cover bg-center bg-no-repeat rounded-full shadow-md shadow-primary"
+            ></div>
+            <div
+              class="w-[65%] md:w-[35%] lg:w-2/5 float-right md:float-left p-4 lg:p-6 relative rounded-xl border-[2px] border-brown before:content[''] before:hidden md:before:inline-block before:absolute before:top-20 before:-right-4 before:border-t-transparent before:border-t-[15px] before:border-l-[15px] before:border-l-brown before:border-r-0 before:border-r-brown before:border-b-[15px] before:border-b-transparent after:content[''] after:hidden md:after:inline-block after:absolute after:border-t-[14px] after:border-t-transparent after:border-l-[14px] after:border-l-beige after:border-r-0 after:border-r-beige after:border-b-[14px] after:border-b-transparent after:top-[81px] after:-right-[13px] shadow-md shadow-primary"
+            >
+              <div class="">
+                <h3 class="font-rouge text-primary text-2xl md:text-4xl font-bold">Lamaran</h3>
+                <p class="mb-2 md:mb-4 text-sm md:text-base text-sage">1 Mei 2023</p>
+              </div>
+              <div class="">
+                <p class="font-light text-brown text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis quibusdam incidunt, quam placeat odit?</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- galeri -->
     <section id="galeri" class="min-h-screen w-full py-16 flex justify-center text-center">
       <div class="container">
-        <p class="text-brown">Memori Kisah Kami</p>
-        <h1 class="font-rouge text-7xl text-primary font-bold pb-14 pt-3">Galeri Photo</h1>
-        <div class="grid grid-cols-2 justify-center mx-auto md:grid-cols-3 w-full md:w-[85%] gap-4">
+        <p class="text-brown 3xl:text-xl">Memori Kisah Kami</p>
+        <h1 class="font-rouge text-5xl lg:text-7xl 3xl:text-8xl text-primary font-bold pb-14 pt-3">Galeri Photo</h1>
+        <div class="grid grid-cols-2 justify-center mx-auto md:grid-cols-3 3xl:grid-cols-4 w-full md:w-[85%] 3xl:w-full gap-4">
           <div class="grid gap-4">
             <div>
               <img class="rounded-lg" src="dist/assets/img/gallery/nail/eren.jpg" alt="Eren" />
@@ -314,6 +320,17 @@
               <img class="rounded-lg" src="dist/assets/img/gallery/nail/random.jpg" alt="Random" />
             </div>
           </div>
+          <div class="hidden 3xl:grid gap-4">
+            <div>
+              <img class="rounded-lg" src="dist/assets/img/gallery/nail/1.jpg" alt="Keyboard" />
+            </div>
+            <div>
+              <img class="rounded-lg" src="dist/assets/img/gallery/nail/madara.jpg" alt="Madara" />
+            </div>
+            <div>
+              <img class="rounded-lg" src="dist/assets/img/gallery/nail/luffy.jpg" alt="Luffy" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -321,8 +338,8 @@
     <!-- Gift -->
     <section id="gift" class="min-h-screen w-full flex justify-center text-center py-16">
       <div class="container">
-        <h1 class="font-rouge text-7xl text-primary font-bold pb-6 pt-3">Kirim Kado</h1>
-        <p class="text-base text-brown pb-8 lg:px-16">
+        <h1 class="font-rouge text-5xl lg:text-7xl 3xl:text-8xl text-primary font-bold pb-6 pt-3">Kirim Kado</h1>
+        <p class="text-sm md:text-base text-brown pb-8 lg:px-16 3xl:text-xl">
           Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah ini. Sebelumnya, kami mengucapkan banyak terima kasih.
         </p>
         <div class="flex flex-wrap justify-evenly w-full overflow-x-hidden">
@@ -359,50 +376,50 @@
     </section>
 
     <!-- Ucapan -->
-    <section id="ucapan" class="w-full flex justify-center py-16">
+    <section id="ucapan" class="w-full flex justify-center pt-16">
       <div class="container">
-        <h1 class="font-rouge text-7xl font-bold pb-6 pt-3 text-primary text-center">Ucapan & Doa</h1>
+        <h1 class="font-rouge text-5xl lg:text-7xl 3xl:text-8xl font-bold pb-6 pt-3 text-primary text-center">Ucapan & Doa</h1>
 
-        <form class="w-[80%] md:w-2/3 lg:w-1/2 mx-auto pt-16">
+        <form class="w-[80%] md:w-2/3 lg:w-1/2 3xl:w-3/5 mx-auto pt-16">
           <div class="relative z-0 w-full mb-5 group">
-            <label for="name" class="font-semibold text-primary top-3">Nama</label>
+            <label for="name" class="font-semibold 3xl:text-2xl text-primary top-3">Nama</label>
             <input
               type="text"
               name="name"
               id="name"
-              class="block py-2.5 px-0 w-full text-base text-primary bg-transparent border-0 border-b-2 border-sage appearance-none focus:outline-none focus:ring-0 focus:border-primary placeholder:text-sage"
+              class="block py-2.5 px-0 w-full text-base 3xl:text-xl text-primary bg-transparent border-0 border-b-2 border-sage appearance-none focus:outline-none focus:ring-0 focus:border-primary placeholder:text-sage"
               placeholder="Nama Anda "
               required
             />
           </div>
 
           <div class="relative z-0 w-full mb-5 group">
-            <label for="textarea" class="top-3 font-semibold text-primary">Ucapan & Doa</label>
+            <label for="textarea" class="top-3 font-semibold 3xl:text-2xl text-primary">Ucapan & Doa</label>
             <textarea
               name="textarea"
               id="textarea"
-              class="block py-2.5 px-0 w-full text-base text-primary bg-transparent border-0 border-b-2 border-sage appearance-none focus:outline-none focus:ring-0 focus:border-primary placeholder:text-sage"
+              class="block py-2.5 px-0 w-full text-base 3xl:text-xl text-primary bg-transparent border-0 border-b-2 border-sage appearance-none focus:outline-none focus:ring-0 focus:border-primary placeholder:text-sage"
               placeholder="Harapan dan Doa "
               required
               rows="5"
             ></textarea>
           </div>
 
-          <p class="font-semibold text-primary">Apakah anda akan hadir memenuhi undangan saya?</p>
+          <p class="font-semibold text-primary 3xl:text-xl">Apakah anda akan hadir memenuhi undangan saya?</p>
           <div class="md:flex pt-3">
             <div class="flex items-center mb-4 w-full md:w-1/2">
-              <input id="hadir" type="radio" name="kehadiran" class="w-4 h-4 accent-primary peer" checked />
-              <label for="hadir" class="block ms-2 text-sm font-medium text-sage peer-checked:text-primary"> Saya akan hadir </label>
+              <input id="hadir" type="radio" name="kehadiran" class="w-4 3xl:w-6 h-4 3xl:h-6 accent-primary peer" checked />
+              <label for="hadir" class="block ms-2 3xl:text-xl text-sm font-medium text-sage peer-checked:text-primary"> Saya akan hadir </label>
             </div>
             <div class="flex items-center mb-4 w-full md:w-1/2">
-              <input id="tidak" type="radio" name="kehadiran" class="w-4 h-4 accent-primary peer" />
-              <label for="tidak" class="block ms-2 text-sm font-medium text-sage peer-checked:text-primary"> Mohon maaf, belum bisa hadir </label>
+              <input id="tidak" type="radio" name="kehadiran" class="w-4 3xl:w-6 h-4 3xl:h-6 accent-primary peer" />
+              <label for="tidak" class="block ms-2 3xl:text-xl text-sm font-medium text-sage peer-checked:text-primary"> Mohon maaf, belum bisa hadir </label>
             </div>
           </div>
 
           <button
             type="submit"
-            class="text-beige bg-primary shadow-md shadow-primary focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center hover:bg-brown transition duration-500 hover:shadow-brown"
+            class="text-beige bg-primary 3xl:text-xl shadow-md shadow-primary focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center hover:bg-brown transition duration-500 hover:shadow-brown"
           >
             Kirim
           </button>
@@ -410,14 +427,28 @@
       </div>
     </section>
 
+    <!-- Wave svg -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="-mb-1">
+      <path
+        fill="#5f6f52"
+        fill-opacity="1"
+        d="M0,288L26.7,282.7C53.3,277,107,267,160,256C213.3,245,267,235,320,240C373.3,245,427,267,480,272C533.3,277,587,267,640,245.3C693.3,224,747,192,800,186.7C853.3,181,907,203,960,218.7C1013.3,235,1067,245,1120,250.7C1173.3,256,1227,256,1280,234.7C1333.3,213,1387,171,1413,149.3L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+      ></path>
+    </svg>
+
     <!-- Footer -->
-    <footer class="w-full bg-primary flex justify-center text-center h-24 md:h-28">
+    <footer class="w-full bg-primary flex justify-center text-center pt-10 pb-20 lg:pb-24 3xl:pb-32">
       <div class="container">
-        <p class="font-semibold text-beige text-sm pt-2 md:pt-3 lg:pt-2">&copy; 2023 All Right Reserved.</p>
+        <p class="text-beige text-sm md:text-base 3xl:text-lg">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</p>
+        <h1 class="text-4xl lg:text-7xl 3xl:text-[5rem] text-beige font-rouge font-bold py-6">Wassalamualaikum Warahmatullahi Wabarakatuh</h1>
+        <p class="font-semibold text-beige text-sm 3xl:text-base pt-2 md:pt-3 lg:pt-2">&copy; 2023 All Right Reserved.</p>
       </div>
     </footer>
 
+    <!-- My Js -->
     <script src="script.js"></script>
+
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
