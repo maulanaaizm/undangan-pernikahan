@@ -1,3 +1,29 @@
+// Music Play
+const song = document.querySelector("#song");
+const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+const audioIcon = document.querySelector(".audio-icon-wrapper i");
+
+let isPlaying = false;
+
+function playAudio() {
+  song.play();
+  isPlaying = true;
+}
+
+audioIconWrapper.onclick = function () {
+  if (isPlaying) {
+    song.pause();
+    audioIcon.classList.remove("bi-volume-up-fill");
+    audioIcon.classList.add("bi-volume-mute-fill");
+  } else {
+    song.play();
+    audioIcon.classList.add("bi-volume-up-fill");
+    audioIcon.classList.remove("bi-volume-mute-fill");
+  }
+
+  isPlaying = !isPlaying;
+};
+
 // Loading Page
 const refreshPage = () => {
   location.reload();
@@ -20,11 +46,14 @@ window.addEventListener("load", () => {
 
 // Navbar
 const navbar = document.querySelector("nav");
+const musicIcon = document.querySelector(".music-icon");
 window.addEventListener("scroll", function () {
   if (this.window.scrollY > 50) {
     navbar.classList.remove("hidden");
+    musicIcon.classList.remove("hidden");
   } else {
     navbar.classList.add("hidden");
+    musicIcon.classList.add("flex");
   }
 });
 

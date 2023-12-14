@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- progress bar -->
-    <div class="w-full h-[4px] bg-primary animate-progress z-40 progress-bar fixed top-0 left-0 rounded-full"></div>
+    <div class="w-full h-[4px] bg- animate-progress z-40 progress-bar fixed top-0 left-0 rounded-full"></div>
 
     <!-- Loading menu -->
     <div class="fixed min-h-screen bg-beige w-full z-50 flex items-center justify-center overflow-hidden load-wrapper">
@@ -39,7 +39,7 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar hidden w-full md:w-2/3 lg:w-1/2 3xl:w-[55%] bg-sage backdrop-blur-sm z-40 fixed bottom-0 md:bottom-2 left-1/2 -translate-x-2/4 py-4 items-center rounded-t-xl md:rounded-xl">
+    <nav class="navbar hidden w-full md:w-2/3 lg:w-1/2 3xl:w-[55%] bg-sage backdrop-blur-sm z-40 fixed bottom-0 md:bottom-2 left-1/2 -translate-x-2/4 py-4 items-center md:rounded-xl">
       <div class="container">
         <ul class="flex justify-between md:justify-around items-center 3xl:h-20">
           <li class="group">
@@ -82,15 +82,17 @@
     </nav>
 
     <!-- home -->
-    <section id="home" class="min-h-screen w-full flex items-center text-center justify-center">
+    <section id="home" class="min-h-screen w-full flex items-center justify-center">
       <div class="container">
-        <h3 class="md:text-xl pb-7 3xl:text-2xl font-semibold text-sage">Undangan Pernikahan</h3>
-        <h1 class="text-5xl md:text-7xl lg:text-9xl 3xl:text-[180px] text-primary font-rouge font-bold">Lanabae & Lanabae</h1>
-        <p class="text-sm md:text-lg 3xl:text-2xl font-semibold text-sage pt-5 pb-4">Akan melangsungkan resepsi pernikahan pada:</p>
-        <p class="font-bold text-brown md:text-xl 3xl:text-3xl pb-10">Rabu, 15 Maret 2023</p>
-        <a href="#orang" class="text-sm 3xl:text-2xl px-4 py-2 md:px-5 text-beige shadow-md shadow-primary hover:shadow-brown bg-primary rounded-full hover:bg-brown transition duration-500">
-          <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a
-        >
+        <div class="w-full text-center">
+          <h3 class="md:text-xl pb-7 3xl:text-2xl font-semibold text-sage">Undangan Pernikahan</h3>
+          <h1 class="text-5xl md:text-7xl lg:text-9xl 3xl:text-[180px] text-primary font-rouge font-bold">Lanabae & Lanabae</h1>
+          <p class="text-sm md:text-lg 3xl:text-2xl font-semibold text-sage pt-5 pb-4">Akan melangsungkan resepsi pernikahan pada:</p>
+          <p class="font-bold text-brown md:text-xl 3xl:text-3xl pb-10">Rabu, 15 Maret 2023</p>
+          <a href="#orang" class="text-sm 3xl:text-2xl px-4 py-2 md:px-5 text-beige shadow-md shadow-primary hover:shadow-brown bg-primary rounded-full hover:bg-brown transition duration-500" onclick="playAudio()">
+            <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a
+          >
+        </div>
       </div>
     </section>
 
@@ -343,7 +345,7 @@
           Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah ini. Sebelumnya, kami mengucapkan banyak terima kasih.
         </p>
         <div class="flex flex-wrap justify-evenly w-full overflow-x-hidden">
-          <div class="w-full md:w-[40%] bg-sage rounded-xl py-5 shadow-xl mb-8" data-aos="zoom-in-right" data-aos-duration="2000">
+          <div class="w-full md:w-[40%] bg-sage rounded-xl py-5 shadow-xl mb-8" data-aos="zoom-in" data-aos-duration="2000">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA" class="mx-auto w-[300px] md:w-[250px] lg:w-[400px]" />
             <div class="w-full flex text-beige py-6">
               <div class="w-1/2">
@@ -357,7 +359,7 @@
             </div>
             <a href="" class="bg-primary py-2 px-6 rounded-full text-beige shadow-md shadow-primary hover:bg-brown hover:shadow-brown transition duration-500"><i class="bi bi-copy mr-2"></i> Salin Rekening</a>
           </div>
-          <div class="w-full md:w-[40%] bg-sage rounded-xl py-5 shadow-xl mb-8" data-aos="zoom-in-left" data-aos-duration="2000">
+          <div class="w-full md:w-[40%] bg-sage rounded-xl py-5 shadow-xl mb-8" data-aos="zoom-in" data-aos-duration="2000">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA" class="mx-auto w-[300px] md:w-[250px] lg:w-[400px]" />
             <div class="w-full text-beige flex py-6">
               <div class="w-1/2">
@@ -419,7 +421,7 @@
 
           <button
             type="submit"
-            class="text-beige bg-primary 3xl:text-xl shadow-md shadow-primary focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center hover:bg-brown transition duration-500 hover:shadow-brown"
+            class="text-beige bg-primary 3xl:text-xl shadow-md shadow-primary focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2 text-center hover:bg-brown transition duration-500 hover:shadow-brown"
           >
             Kirim
           </button>
@@ -438,12 +440,28 @@
 
     <!-- Footer -->
     <footer class="w-full bg-primary flex justify-center text-center pt-10 pb-20 lg:pb-24 3xl:pb-32">
-      <div class="container">
-        <p class="text-beige text-sm md:text-base 3xl:text-lg">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</p>
-        <h1 class="text-4xl lg:text-7xl 3xl:text-[5rem] text-beige font-rouge font-bold py-6">Wassalamualaikum Warahmatullahi Wabarakatuh</h1>
+      <div class="container overflow-hidden">
+        <p
+          class="text-beige text-sm md:text-base 3xl:text-lg"
+          data-aos="fade-up"
+          data-aos-duration="
+        500"
+        >
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.
+        </p>
+        <h1 class="text-4xl lg:text-7xl 3xl:text-[5rem] text-beige font-rouge font-bold py-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Wassalamualaikum Warahmatullahi Wabarakatuh</h1>
         <p class="font-semibold text-beige text-sm 3xl:text-base pt-2 md:pt-3 lg:pt-2">&copy; 2023 All Right Reserved.</p>
       </div>
     </footer>
+
+    <div class="bg-brown md:bg-primary w-8 h-8 lg:w-10 lg:h-10 rounded-full fixed right-0 md:right-3 bottom-14 z-[55] md:top-1/2 md:-translate-y-1/2 justify-center items-center cursor-pointer hidden music-icon">
+      <audio id="song" autoplay loop>
+        <source src="dist/assets/music/sound.mp3" type="audio/mp3" />
+      </audio>
+      <div class="audio-icon-wrapper">
+        <i class="bi bi-volume-up-fill text-2xl text-beige"></i>
+      </div>
+    </div>
 
     <!-- My Js -->
     <script src="script.js"></script>
