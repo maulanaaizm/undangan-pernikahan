@@ -39,6 +39,7 @@ const stopLoader = () => {
   loader.style.display = "none";
 };
 window.addEventListener("load", () => {
+  AOS.init();
   let bodyLoad = document.querySelector("body");
   bodyLoad.classList.add("overflow-hidden");
   setTimeout(playLoader, 2500);
@@ -46,14 +47,12 @@ window.addEventListener("load", () => {
 
 // Navbar
 const navbar = document.querySelector("nav");
-const musicIcon = document.querySelector(".music-icon");
+
 window.addEventListener("scroll", function () {
   if (this.window.scrollY > 50) {
     navbar.classList.remove("hidden");
-    musicIcon.classList.remove("hidden");
   } else {
     navbar.classList.add("hidden");
-    musicIcon.classList.add("flex");
   }
 });
 

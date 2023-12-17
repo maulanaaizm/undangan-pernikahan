@@ -38,7 +38,7 @@ body {
 }
 
 .simply-countdown > .simply-section .simply-word {
-  @apply text-base lg:text-xl -mt-2;
+  @apply text-base lg:text-xl;
 }
 @keyframes fadeUp {
   0% {
