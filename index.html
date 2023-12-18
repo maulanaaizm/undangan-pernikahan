@@ -25,17 +25,18 @@
   </head>
   <body>
     <!-- progress bar -->
-    <div class="w-full h-[4px] bg- animate-progress z-40 progress-bar fixed top-0 left-0 rounded-full"></div>
+    <div class="w-full h-[4px] bg-primary animate-progress z-40 progress-bar fixed top-0 left-0 rounded-full"></div>
 
     <!-- Loading menu -->
     <div class="fixed min-h-screen bg-beige w-full z-50 flex items-center justify-center overflow-hidden load-wrapper">
-      <div class="loading h-[100vh] w-full flex items-center justify-center text-center z-50">
+      <!-- <div class="loading flex items-center justify-center text-center z-50">
         <span class="love1 w-2 h-2 lg:w-4 lg:h-4 rounded-full bg-primary text-pink-600 mr-[1px]"></span>
         <span class="love2 w-2 h-2 lg:w-4 lg:h-4 rounded-full bg-sage text-pink-600 mr-[1px]"></span>
         <span class="love3 w-2 h-2 lg:w-4 lg:h-4 rounded-full bg-brown text-pink-600 mr-[1px]"></span>
         <span class="love4 w-2 h-2 lg:w-4 lg:h-4 rounded-full bg-sage text-pink-600 mr-[1px]"></span>
         <span class="love5 w-2 h-2 lg:w-4 lg:h-4 rounded-full bg-primary text-pink-600 mr-[1px]"></span>
-      </div>
+      </div> -->
+      <div class="loader"></div>
     </div>
 
     <!-- navbar -->
@@ -82,17 +83,15 @@
     </nav>
 
     <!-- home -->
-    <section id="home" class="min-h-screen w-full flex items-center justify-center">
+    <section id="home" class="min-h-screen w-full flex items-center text-center justify-center">
       <div class="container">
-        <div class="w-full text-center">
-          <h3 class="md:text-xl pb-7 3xl:text-2xl font-semibold text-sage">Undangan Pernikahan</h3>
-          <h1 class="text-5xl md:text-7xl lg:text-9xl 3xl:text-[180px] text-primary font-rouge font-bold">Lanabae & Lanabae</h1>
-          <p class="text-sm md:text-lg 3xl:text-2xl font-semibold text-sage pt-5 pb-4">Akan melangsungkan resepsi pernikahan pada:</p>
-          <p class="font-bold text-brown md:text-xl 3xl:text-3xl pb-10">Rabu, 15 Maret 2023</p>
-          <a href="#orang" class="text-sm 3xl:text-2xl px-4 py-2 md:px-5 text-beige shadow-md shadow-primary bg-primary rounded-full hover:bg-sage transition duration-300" onclick="playAudio()">
-            <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a
-          >
-        </div>
+        <h3 class="md:text-xl pb-7 3xl:text-2xl font-semibold text-sage">Undangan Pernikahan</h3>
+        <h1 class="text-5xl md:text-7xl lg:text-9xl 3xl:text-[180px] text-primary font-rouge font-bold">Lanabae & Lanabae</h1>
+        <p class="text-sm md:text-lg 3xl:text-2xl font-semibold text-sage pt-5 pb-4">Akan melangsungkan resepsi pernikahan pada:</p>
+        <p class="font-bold text-brown md:text-xl 3xl:text-3xl pb-10">Rabu, 15 Maret 2023</p>
+        <a href="#orang" class="text-sm 3xl:text-2xl px-4 py-2 md:px-5 text-beige shadow-md shadow-primary bg-primary rounded-full hover:bg-sage transition duration-300" onclick="playAudio()">
+          <i class="bi bi-envelope-open mr-2"></i>Buka Undangan</a
+        >
       </div>
     </section>
 
@@ -101,7 +100,7 @@
       <div class="container">
         <div class="text-center">
           <h2 class="font-rouge text-4xl text-primary lg:text-7xl 3xl:text-[5rem] font-semibold mb-2">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
-          <p class="md:text-base text-sm 3xl:text-xl text-brown lg:text-base">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
+          <p class="md:text-base text-sm 3xl:text-xl text-brown lg:text-base">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
         </div>
         <div class="lg:flex justify-center pt-20 lg:pt-24 overflow-hidden">
           <div class="lg:w-[45%] flex items-center flex-row-reverse" data-aos="fade-right" data-aos-duration="1500">
@@ -153,32 +152,32 @@
         <div class="flex flex-wrap justify-evenly overflow-hidden">
           <div class="border-[2px] border-primary bg-sage/10 backdrop-blur-sm w-full md:w-[45%] lg:w-2/5 pb-8 rounded-xl shadow-md shadow-primary mb-8" data-aos="zoom-in" data-aos-duration="2000">
             <h1 class="py-2 text-3xl lg:text-4xl font-bold font-rouge border-b-2 text-primary border-primary">Akad Nikah</h1>
-            <div class="flex flex-wrap justify-evenly text-brown pb-4 md:pb-9">
+            <div class="flex flex-wrap justify-evenly text-primary pb-4 md:pb-9">
               <div class="w-2/5 pt-3 font-semibold">
                 <i class="bi bi-calendar-week-fill"></i>
                 <p>Rabu</p>
-                <p class="font-bold">17 Agustus 2023</p>
+                <p>17 Agustus 2023</p>
               </div>
               <div class="w-2/5 pt-3 font-semibold">
                 <i class="bi bi-clock-fill"> </i>
                 <p>Pukul</p>
-                <p class="font-bold">08.00 - Selesai</p>
+                <p>08.00 - Selesai</p>
               </div>
             </div>
             <a href="" class="bg-primary border-primary rounded-full text-beige py-2 px-6 shadow-md shadow-primary hover:bg-sage transition duration-300"><i class="bi bi-calendar-week mr-2"></i> Add to Calendar</a>
           </div>
           <div class="border-[2px] border-primary bg-sage/10 backdrop-blur-sm w-full md:w-[45%] lg:w-2/5 pb-8 rounded-xl shadow-md shadow-primary mb-8" data-aos="zoom-in" data-aos-duration="2000">
             <h1 class="py-2 text-3xl lg:text-4xl font-bold font-rouge text-primary border-b-2 border-primary">Resepsi</h1>
-            <div class="flex flex-wrap justify-evenly text-brown pb-4 md:pb-9">
+            <div class="flex flex-wrap justify-evenly text-primary pb-4 md:pb-9">
               <div class="w-2/5 pt-3 font-semibold">
                 <i class="bi bi-calendar-week-fill"></i>
                 <p>Rabu</p>
-                <p class="font-bold">17 Agustus 2023</p>
+                <p>17 Agustus 2023</p>
               </div>
               <div class="w-2/5 pt-3 font-semibold">
                 <i class="bi bi-clock-fill"> </i>
                 <p>Pukul</p>
-                <p class="font-bold">13.00 - Selesai</p>
+                <p>13.00 - Selesai</p>
               </div>
             </div>
             <a href="" class="bg-primary border-primary rounded-full text-beige py-2 px-6 shadow-md shadow-primary transition duration-300 hover:bg-sage"><i class="bi bi-calendar-week mr-2"></i> Add to Calendar</a>

@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 body {
-  @apply bg-beige font-baloo;
+  background-color: #fefae0;
+  font-family: "Baloo Bhai 2", sans-serif;
 }
 
 .progress-bar {
-  @apply z-[9999];
+  z-index: 9999;
   animation-timeline: scroll();
 }
 .loading span {
@@ -30,7 +31,7 @@ body {
 }
 
 .simply-countdown {
-  @apply w-full md:w-[90%] bg-transparent backdrop-blur-sm shadow-md shadow-primary;
+  @apply w-full md:w-[90%] py-2  bg-transparent backdrop-blur-sm shadow-md shadow-primary;
 }
 
 .simply-countdown > .simply-section .simply-amount {
@@ -50,9 +51,44 @@ body {
 }
 
 .active {
-  @apply text-primary;
+  color: #5f6f52;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* LOADING */
+.loader {
+  height: 15px;
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(farthest-side, #5f6f52 90%, #0000);
+  background: var(--_g) left, var(--_g) right;
+  background-size: 25% 100%;
+  display: grid;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  height: inherit;
+  aspect-ratio: 1;
+  grid-area: 1/1;
+  margin: auto;
+  border-radius: 50%;
+  transform-origin: -100% 50%;
+  background-color: #b99470;
+  animation: l49 1s infinite linear;
+}
+.loader:after {
+  transform-origin: 200% 50%;
+  --s: -1;
+  animation-delay: -0.5s;
+  background-color: #a9b388;
+}
+
+@keyframes l49 {
+  58%,
+  100% {
+    transform: rotate(calc(var(--s, 1) * 1turn));
+  }
 }
